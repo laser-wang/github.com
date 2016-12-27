@@ -20,15 +20,3 @@ _cgo_export.*
 _testmain.go
 
 *.exe
-*.test
-*.prof
-
-.DS_Store
-
-/tmp/
-/logs/
-/test/test.log
-*.log
-
-# ignore compatible code
-#other*
