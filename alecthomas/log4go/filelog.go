@@ -43,6 +43,7 @@ type FileLogWriter struct {
 // This is the FileLogWriter's output method
 func (w *FileLogWriter) LogWrite(rec *LogRecord) {
 	w.rec <- rec
+	w.file.Sync()
 }
 
 func (w *FileLogWriter) Close() {
